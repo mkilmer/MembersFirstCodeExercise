@@ -1,0 +1,123 @@
+/*  -------------------
+  Main CSS           
+------------------- */
+
+/* Utility */
+
+* {
+    box-sizing: border-box;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+/* Nav / Structure */
+
+header {
+    background: rgb(0, 82, 155);
+    background: linear-gradient(
+        0deg,
+        rgba(0, 82, 155, 1) 0%,
+        rgba(42, 111, 156, 1) 26%,
+        rgba(15, 138, 159, 1) 100%
+    );
+    margin-bottom: 1.5em;
+}
+
+footer {
+    color: #fff;
+    font-size: 1.25em;
+    background: rgb(0, 82, 155);
+    background: linear-gradient(
+        0deg,
+        rgba(0, 82, 155, 1) 0%,
+        rgba(42, 111, 156, 1) 26%,
+        rgba(15, 138, 159, 1) 100%
+    );
+    padding: 1em 0;
+    margin-top: 1.5em;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+header svg {
+    max-width: 16.25rem;
+    height: auto;
+}
+
+header .header-content {
+    display: flex;
+    padding: 1.25rem 0;
+    align-items: center;
+}
+
+@media (max-width: 37.5em) {
+    header .header-content {
+        display: block;
+    }
+}
+
+/* User Info */
+
+.user-info {
+    margin: 0 0 0 auto;
+    display: block;
+    font-size: 1em;
+    padding: 0;
+    color: #fff;
+    text-align: right;
+}
+
+@media (max-width: 37.5em) {
+    .user-info {
+        text-align: left;
+        margin-top: 0.5em;
+    }
+}
+
+/* Posts */
+
+main section {
+    background-color: #fff;
+    box-shadow: 0.125em 0.125em 0.625em 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0.625em;
+    padding: 1em;
+    margin: 1em 0;
+}
+
+.posts-info {
+    margin-left: auto;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.posts-info button {
+    margin-left: auto;
+}
+
+.posts-info h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+section h2,
+section a {
+    text-transform: capitalize;
+    color: rgba(0, 82, 155, 1);
+}
+
+section p {
+    margin: 0;
+    text-transform: capitalize;
+}
+
+/* Modal */
+
+.modal-body input,
+.modal-body textarea {
+    margin-bottom: 1em;
+}
